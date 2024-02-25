@@ -1,0 +1,467 @@
+*{
+      margin: 0;
+      padding: 0;
+  }
+  .main {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(image3.jpg) no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+
+.menu {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+  nav{
+      display:flex;
+      align-items:center;
+      justify-content: space-between;
+      padding-top: 5px;
+      padding-left: 15px;
+      position: fixed;
+      background-color: #ffffff;
+  }
+
+
+  
+  
+  .logo {
+    color: dodgerblue;
+    font-size: 30px;
+    font-style: oblique;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.logo a {
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+
+}
+
+nav ul li {
+    margin-right: 20px;
+    font-size: 18px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    text-transform: capitalize;
+    float: right;
+}
+
+nav ul li a:hover {
+    color: #f9004d;
+    transition: .2s;
+}
+
+.top-right-buttons {
+    display: flex;
+    align-items: center;
+    float: right;
+   
+}
+
+.login-button,
+.signup-button {
+    margin-left: 20px;
+    padding: 8px 18px;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.2s;
+    float: right;
+}
+
+.login-button:hover,
+.signup-button:hover {
+  background-color: blue;
+}
+.navbar-nav{
+margin-left: 170px;
+}
+
+.bn5 {
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: dodgerblue ;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    
+    text-decoration: none;
+  }
+  
+  .bn5:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowingbn5 20s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowingbn5 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .bn5:active {
+    color: #000;
+  }
+  
+  .bn5:active:after {
+    background: transparent;
+  }
+  
+  .bn5:hover:before {
+    opacity: 1;
+  }
+  
+  .bn5:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #191919;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+
+
+/* Welcome Section Styles */
+.welcome-section {
+    padding: 150px 0;
+    text-align: center;
+    
+}
+
+.animated-text span {
+    color: #f9004d;
+    font-size: 50px;
+}
+
+.animated-text {
+    animation: fadeInScale 0.5s ease-out;
+}
+
+.welcome-section h2 {
+    color:white;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.welcome-section p {
+    color:white; 
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    
+}
+
+.book-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: dodgerblue;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+.book-link:hover {
+    background-color: blue;
+}
+      
+  
+  /*destination*/
+    .destination-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: stretch;
+      padding: 20px;
+    }
+    
+    .card {
+      flex: 0 0 calc(50% - 20px); 
+      margin: 10px;
+      padding: 15px;
+      box-sizing: border-box;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    
+    .card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    
+    h3 {
+      margin-top: 10px;
+      color: #333;
+
+    }
+  
+  @media (min-width: 768px) {
+      .card {
+          flex: 0 0 calc(33.33% - 20px); /* Show 3 cards per row on larger screens */
+      }
+  }
+  
+    /*About section*/
+  
+   .about-section {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h3 {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .content {
+    text-align: left;
+  }
+  
+  p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  strong {
+    color: #333;
+  }
+  /*contact us*/
+  .contact-section {
+    background-color:darkgray;
+    padding: 60px 0;
+  }
+  
+  .contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    margin-top: 15px;
+    color:#101010;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .submit-button {
+    background-color:dodgerblue;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .submit-button:hover {
+    background-color:#002bff;
+    
+  }
+  
+  footer{
+      position: relative;
+      width: 100%;
+      height: 280px;
+      background:#ccc;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .social{
+      display: flex;
+  }
+  .social a{
+      width: 45px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background:dodgerblue;
+      border-radius: 50%;
+      margin: 22px 10px;
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+  }
+  .social a:hover{
+      transform: scale(1.3);
+      transition: .3s;
+  }
+  .copy{
+  position:relative;
+  width: 100%;
+  height: 40px;
+  background:dodgerblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: -10px;
+  
+  }
+  .copy p{
+    margin-top: 20px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  
+  /* Dropdown styles */
+  .dropdown {
+      display: inline-block;
+      position: relative;
+      margin-left: 30px;
+  }
+  
+  .dropbtn {
+      background-color: transparent;
+      color: dodgerblue;
+      padding: 14px 32px;
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+  }
+  
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 200px;
+      box-shadow: 0px 8px 18px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      align-items: center;
+      border-radius: 10px;
+      
+  }
+  
+  .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      align-items: center;
+      margin-right: 20px;
+      margin-left: 20px;
+  }
+  
+  .dropdown-content a:hover {
+      background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+  
+
+
+  /* Add this at the end of your CSS file */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  nav ul li {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+
+  .top-right-buttons {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+  }
+
+  .login-button,
+  .signup-button {
+      margin-left: 0;
+      margin-top: 10px;
+  }
+}
