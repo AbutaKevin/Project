@@ -15,7 +15,7 @@ $user_logged_in = isset($_SESSION['user_logged_in']) && $_SESSION['user_logged_i
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KeviBus Travellers</title>
-    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -41,7 +41,7 @@ $user_logged_in = isset($_SESSION['user_logged_in']) && $_SESSION['user_logged_i
                 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="#home">
-                            <img src="logo.png" style="width: 50px;" alt="Logo">
+                            <img src="images/logo.png" style="width: 50px;" alt="Logo">
                             <span class="logo">evi<span>Bus</span>Travellers</span>
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -106,32 +106,32 @@ $user_logged_in = isset($_SESSION['user_logged_in']) && $_SESSION['user_logged_i
         <h2 class="text-center mb-4">Our Top Destinations</h2> 
         <section class="destination-section">
           <div class="card">
-            <img src="Nairobi.jpg" alt="Destination 1">
+            <img src="images/Nairobi.jpg" alt="Destination 1">
             <h5>NAIROBI</h5>
           </div>
       
           <div class="card">
-            <img src="kisumu.jpg" alt="Destination 2">
+            <img src="images/kisumu.jpg" alt="Destination 2">
             <h5>KISUMU</h5>
           </div>
       
           <div class="card">
-            <img src="kisii.jpg" alt="Destination 3">
+            <img src="images/kisii.jpg" alt="Destination 3">
             <h5>KISII</h5>
           </div>
       
           <div class="card">
-            <img src="Nakuru.jpg" alt="Destination 4">
+            <img src="images/Nakuru.jpg" alt="Destination 4">
             <h5>NAKURU</h5>
           </div>
       
           <div class="card">
-            <img src="mombasa.jpg" alt="Destination 5">
+            <img src="images/mombasa.jpg" alt="Destination 5">
             <h5>MOMBASA</h5>
           </div>
       
           <div class="card">
-            <img src="malindi.jpg" alt="Destination 6">
+            <img src="images/malindi.jpg" alt="Destination 6">
             <h5>MALINDI</h5>
           </div>
         </section>
