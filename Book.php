@@ -48,7 +48,7 @@ $result = $conn->query($sql);
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(image3.jpg) no-repeat;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/image3.jpg) no-repeat;
             background-position: center;
             background-size: cover;
             color: #fff;

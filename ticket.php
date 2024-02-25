@@ -43,7 +43,7 @@ $busDetails = isset($_SESSION['busDetails']) ? $_SESSION['busDetails'] : [];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="icon" type="image/png" href="images/logo.png">
     <title>KeviBus Travellers - Ticket Details</title>
     <style>
         body {

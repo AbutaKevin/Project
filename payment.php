@@ -158,15 +158,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['confirm_payment'])) {
         </div>
         <div class="payment-methods">
             <div class="payment-method" onclick="payWithMpesa()">
-                <img src="mpesa_logo.png" alt="M-pesa Logo">
+                <img src="images/mpesa_logo.png" alt="M-pesa Logo">
                 M-pesa
             </div>
             <div class="payment-method" onclick="payWithAirtelMoney()">
-                <img src="airtel_logo.png" alt="Airtel Money Logo">
+                <img src="images/airtel_logo.png" alt="Airtel Money Logo">
                 Airtel Money
             </div>
             <div class="payment-method" onclick="payWithCard()">
-                <img src="card_logo.jpg" alt="Card Logo">
+                <img src="images/card_logo.jpg" alt="Card Logo">
                 Credit/Debit Card
             </div>
         </div>

@@ -58,7 +58,7 @@ if (isset($_POST['search'])) {
         body {
             height: 100vh;
             width: 100%;
-            background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(image3.jpg)no-repeat;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/image3.jpg)no-repeat;
             background-position: center;
             background-size: cover;
         }
